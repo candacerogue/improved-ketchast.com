@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>John Ketchum Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CMontserrat:400,700%7CBebas+Neue'
+        rel='stylesheet' type='text/css'>
+    <style>
+        .scrolling-wrapper-flexbox {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            background-image: url(/img/timeline-line.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+            width: 100vw;
+            height: 55vh;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .card {
+            flex: 0 0 auto;
+            color: white;
+            width: 25vw;
+            height: 30vw;
+            flex-direction: column;
+        }
+
+        #odd {
+            background-image: url(/img/line-item.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 30vw;
+            height: 28vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            order: 1;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 90%;
+            padding-left: 5%;
+        }
+
+        .title img {
+            width: 250px;
+            height: 75px;
+            object-fit: contain;
+        }
+
+        .title span {
+            font-weight: bold;
+            font-size: 3vw;
+            margin-right: 5%;
+            margin-top: 5%;
+            white-space: nowrap;
+        }
+
+        .dropdown {
+            order: 2;
+            position: relative;
+            left: 90%;
+            top: 5%;
+            font-size: 1.5rem;
+            padding: 5%;
+        }
+
+        #even {
+            position: relative;
+            top: 50%;
+            background-image: url(img/line-item-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 30vw;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .dropdown-even {
+            order: 1;
+            position: relative;
+            left: 55%;
+            font-size: 1.5rem;
+            padding: 5%;
+        }
+
+        .title-even {
+            order: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            position: relative;
+            left: 55%;
+            top: 0%;
+            padding-left: 5%;
+        }
+
+        .title-even span {
+            font-weight: bold;
+            font-size: 3vw;
+            margin-right: 5%;
+            margin-top: 5%;
+            white-space: nowrap;
+        }
+
+        .title-even img {
+            width: 250px;
+            height: 75px;
+            object-fit: contain;
+        }
+
+        @media only screen and (max-width: 1440px) {
+
+            .working-with-others {
+                height: 100vh;
+                padding-bottom: 5%;
+                margin-top: 0%;
+            }
+
+            .title-content {
+                top: -5%;
+
+
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .working-with-others {
+                margin-top: 25%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .working-with-others {
+                height: 100vh;
+                margin-top: 20%;
+            }
+
+            .title-content {
+                height: 25vh;
+            }
+
+            .text {
+                font-size: 25vw;
+            }
+
+            .timeline {
+                height: 75vh;
+            }
+        }
+
+
+        @media only screen and (max-width: 425px) {
+
+            .working-with-others {
+                height: 80vh;
+                margin-top: 75%;
+            }
+
+            .title-content {
+                top: -2%;
+            }
+
+            .timeline {
+                position: relative;
+            }
+
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            .working-with-others {
+                height: 80vh;
+                margin-top: 75%;
+            }
+
+            .title-content {
+                top: -2%;
+                margin-bottom: 5%;
+            }
+
+            .timeline {
+                position: relative;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="scroll-assist" style="font-family: Avenir, Helvetica, Arial, sans-serif; color: black;">
+    <a id="top"></a>
+    <div class="loader"></div>
+    <div class="main-container transition--fade">
+        <section class="height-100 imagebg cover cover-3 parallax" style="background-color: black;">
+            <div class="background-image-holder">
+                <img alt="image" src="img/Background-frame.svg" />
+            </div>
+            <div class="container d-flex justify-content-center">
+                <div class="row" style="display: flex; flex-direction: row; align-items: baseline;">
+                    <div class="col-sm-6">
+                        <img alt="image" src="img/JK-Header-Img.png" style="width: 100vh;" />
+                    </div>
+                    <div class="col-sm-6">
+                        <img alt="John Ketchum's Head" src="img/JK-Head.png" style="width: 75%; margin-left: 25%;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--begin of about-section-->
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img alt="image" src="img/About.png" style="width: 100%; margin-top: 20%;" />
+                </div>
+                <div class="col-md-6">
+                    <h4 style="font-size: 2em;">Hey there, it’s John.</h4>
+                    <p style="font-size: 1.5em; line-height: 1.4em;">
+                        Thanks for coming through and learning a bit more about me. You’re probably wondering what I’m
+                        all about, so here’s the short version: i’m a journalist dedicated to telling the world’s most
+                        important stories and putting people in a position to do their best work. Over the past decade,
+                        I’ve worked in every corner of the media industry as a producer, reporter, and editor. From
+                        helping launch Marketplace’s Wealth and Poverty Desk, to producing for NPR’s Morning
+                        Edition, to running social media accounts at CNN, I’ve approached each place I’ve worked with
+                        intention, determination, and a hunger to drive innovation across the media industry. I’m
+                        currently on the
+                        startups team at the American Journalism Project, where I help launch media organizations across
+                        the U.S.
+                    </p>
+                    <p style="font-size: 1.5em; line-height: 1.4em;">
+                        I’ve done a lot and have worked with so many amazing people. Check out the timeline below to see
+                        what I’ve been up to. Also, if you’d like to check out some of my work, please take a look at
+                        some articles I’ve written, interactive projects I’ve created, audio interviews I’ve produced,
+                        and more.
+                    </p>
+                </div>
+            </div>
+            <!--end of container-->
+        </section>
+        <!--end of about-section-->
+        <!--begin of working with others-->
+        <section>
+            <div class="working-with-others"
+                style=" display: flex; flex-direction: column; background-color: #9E9E9E; width: 100%; height: 70vh;">
+                <div class="working-with-others__title-content" style="display: flex; flex-direction: row; width: 100%; height: 40vh; display: flex; flex-direction: row; justify-content: flex-start; order: 1; position: relative; align-items: center;">
+                    <div class="working-with-others__title-content__text"
+                        style="font-family: 'Bebas Neue', cursive; font-size: 10vw; font-weight: 400;color: white;">
+                        WORK
+                    </div>
+                    <div class="working-with-others__title-content__img" style="font-family: 'Bebas Neue', cursive; font-size: 3vw; font-weight: 400;">
+                        Scroll Timeline Horizontally
+                    </div>
+                </div>
+                <div class="working-with-others__timeline" style="display: flex; order: 2; width: 100%; height: 60vh;">
+                    <div class="scrolling-wrapper-flexbox">
+                        <div class="card" id="even" style="margin-left: 100px;">
+                            <div class="dropdown-even">
+                                Working with a team of journalism, product, and finance experts to launch sustainable
+                                media
+                                organizations across the country.
+                            </div>
+                            <div class="title-even safari_only_others">
+                                <span>2020</span>
+                                <img src="img/AJP-Logo.png" alt="AJP-Logo">
+                            </div>
+                        </div>
+                        <div class="card" id="odd">
+                            <div class="title">
+                                <span>2020</span>
+                                <img src="img/Plug.png" alt="The-Plug-Logo">
+                            </div>
+                            <div class="dropdown">
+                                Editing stories and managing projects on the Black Innovation economy.
+                            </div>
+                        </div>
+                        <div class="card" id="even">
+                            <div class="dropdown-even">
+                                Helped launch an editorial brand (Afrotech) focused on technology and how it impacts
+                                people
+                                of color.
+                            </div>
+                            <div class="title-even safari_only_others" style="margin-top: -6%">
+                                <span>2018-2019</span>
+                                <img src="img/Blavity-logo.png" alt="Blavity-Logo">
+                            </div>
+                        </div>
+                        <div class="card" id="odd">
+                            <div class="title">
+                                <span>2017</span>
+                                <img src="img/Poynter.png" alt="Pontyer-Logo">
+                            </div>
+                            <div class="dropdown">
+                                Participated in Poynter’s media leadership training with newsroom managers from around
+                                the
+                                world.
+                            </div>
+                        </div>
+                        <div class="card" id="even">
+                            <div class="dropdown-even">
+                                Board member helping the center on strategy and curriculum.
+                            </div>
+                            <div class="title-even safari_only_others">
+                                <span>2017</span>
+                                <img src="img/WVMIC.jpeg" alt="WVMIC-Logo">
+                            </div>
+                        </div>
+                        <div class="card" id="odd">
+                            <div class="title">
+                                <span>2017-2018</span>
+                                <img src="img/SBNation.jpg" alt="SBNation-Logo">
+                            </div>
+                            <div class="dropdown" style="margin-top: -5%;">
+                                Served as Deputy Editor for SB Nation, Vox Media’s sports website. I helped lead the
+                                day-to-day and
+                                managed a staff of producers, editors, and writers on night coverage.
+                            </div>
+                        </div>
+                        <div class="card" id="even">
+                            <div class="dropdown-even">
+                                Served as a Knight Innovator in residence while at CNN. I taught a class on food justice
+                                reporting and
+                                audience engagement.
+                            </div>
+                            <div class="title-even safari_only_others">
+                                <span>2016</span>
+                                <img src="img/WVMS.jpeg" alt="WVMS-Logo">
+                            </div>
+                        </div>
+                        <div class="card" id="odd">
+                            <div class="title">
+                                <span>2015</span>
+                                <img src="img/CNN.png" alt="CNN-Logo" style="width: 130px;">
+                            </div>
+                            <div class="dropdown" style="margin-top: -5%;">
+                                Worked on CNN’s inaugural social media team that was put in place before the 2016
+                                election.
+                                My focus was
+                                optimizing content for Facebook, Twitter, and Instagram.
+                            </div>
+                        </div>
+                        <div class="card" id="even">
+                            <div class="dropdown-even">
+                                Built and led audience engagement strategy around investigative journalism.
+                            </div>
+                            <div class="title-even safari_only_others">
+                                <span>2015</span>
+                                <img src="img/Center-for-Public-Integrity.jpg" alt="Center-For-Public-Integrity-Logo">
+                            </div>
+                        </div>
+                        <div class="card" id="odd">
+                            <div class="title">
+                                <span>2014</span>
+                                <img src="img/NPR.png" alt="NPR-Logo">
+                            </div>
+                            <div class="dropdown">
+                                Worked as a producer for NPR’s Morning Edition creating content for broadcast and the
+                                web.
+                            </div>
+                        </div>
+                        <div class="card" id="even">
+                            <div class="dropdown-even">
+                                Worked with a team of journalists to launch a desk covering wealth, poverty, and income
+                                inequality after
+                                the financial crash of 2008.
+                            </div>
+                            <div class="title-even safari_only_others">
+                                <span>2012-2014</span>
+                                <img src="img/Marketplace.jpg" alt="Marketplace-Logo">
+                            </div>
+                        </div>
+                        <div class="card last" id="odd" style="margin-left: 10px;">
+                            <div class="title">
+                                <span>2008-2011</span>
+                                <img src="img/WCMU.jpg" alt="WCMU-Logo">
+                            </div>
+                            <div class="dropdown">
+                                Covered local politics and general news.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of working with others-->
+        <!--begin of working with me-->
+        <section>
+            <div class="container">
+                <div class="row" style="display: flex; justify-content: center; background-color: black; height: 80vh;">
+                    <div class="col-sm-12" style="width: 70%;">
+                        <img alt="image" src="img/with-me.png" />
+                        <div class="slider" data-paging="true" style="margin-bottom: -20%;">
+                            <ul class="slides">
+                                <li>
+                                    <a href="https://afrotech.com/julia-collins-transformed-the-food-industry-now-shes-trying-to-save-the-world"
+                                        target="blank">
+                                        <img alt="Julia Collins Transformed The Food Industry Now She's Trying to Save the World"
+                                            src="img/Art-1-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://afrotech.com/everette-taylor-wants-to-disrupt-the-art-industry"
+                                        target="blank">
+                                        <img alt="Everette Taylor Wants to Disrupt the Art Industry"
+                                            src="img/Art-2-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://afrotech.com/richelieu-dennis-wants-to-turn-madam-c-j-walkers-house-into-an-incubator-for-black-women-entrepreneurs"
+                                        target="blank">
+                                        <img alt="Herbie Hancock on a Path to Find my Own Answer"
+                                            src="img/Art-3-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://afrotech.com/julia-collins-transformed-the-food-industry-now-shes-trying-to-save-the-world"
+                                        target="blank">
+                                        <img alt="Richelieu Dennis Wants to Turn Madam CJ Walkers House into an Incubator for Black Women Entrepreneurs"
+                                            src="img/Art-4-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://afrotech.com/nipsey-hussle-the-stem-advocate" target="blank">
+                                        <img alt="Nipsey Hussle the Stem Advocate" src="img/Art-5-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://brokenplate.org/" target="blank">
+                                        <img alt="A Project" src="img/Art-6-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.npr.org/sections/codeswitch/2014/11/14/363793023/director-gina-prince-bythewood-its-time-to-obliterate-the-term-black-film"
+                                        target="blank">
+                                        <img alt="Director Gina Prince Bythewood Its Time to Obliterate the Term Black Film"
+                                            src="img/Art-7-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.npr.org/sections/thetwo-way/2014/09/11/347746868/susan-rice-islamic-state-fight-will-not-be-iraq-war-redux"
+                                        target="blank">
+                                        <img alt="Susan Rice Islamic State Fight Will Not Be Irage War Redux"
+                                            src="img/Art-8-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.npr.org/2014/10/28/359340269/what-is-it-about-kendrick-lamar"
+                                        target="blank">
+                                        <img alt="What is it about Kendrick Lamar" src="img/Art-9-Pic.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.niemanlab.org/2020/12/more-journalists-of-color-become-newsroom-founders/"
+                                        target="blank"></a>
+                                    <img alt="More journalists of color become newsroom founders"
+                                        src="img/Art-10-Pic.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <!--end of working with me-->
+        <!--start of ready to connect-->
+        <section class="height-60 imagebg parallax" data-overlay="5" style="margin-top: 10%;">
+            <div class="background-image-holder">
+                <img alt="pic" src="img/ready-background.png" />
+            </div>
+            <div class="container pos-vertical-bottom">
+                <div class="row">
+                    <div class="col-sm-12 text-left" style="margin-right: 30%; margin-top: 10%;">
+                        <img alt="pic" src="img/ready.png" style="max-width: 70%; margin-top:15%;" />
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <div class="row" style="display: flex; flex-direction: row; margin-left: 25%; align-items: center;">
+            <div class="col-sm-4">
+                <img src="img/arrow-electrocution.gif" alt="arrow">
+            </div>
+            <div class="connect__connect-links__img col-sm-4">
+                <img src="img/to-connect-fallback.png" alt="connect with me graphic">
+                <div class="row connect__links col-sm-4"
+                    style="display: flex; flex-direction: row; width: 100%; justify-content: space-between">
+                    <span class="connect__connect-links__links__gmail"
+                        style="vertical-align: middle; display: inline-block;">
+                        <a href="malito:john.ketchum3@gmail.com" target="_blank">
+                            <img style="width: 5vw; height: auto;" src="img/gmail.svg" alt="gmail">
+                        </a>
+                    </span>
+                    <span class="connect__connect-links__links__twitter"
+                        style="vertical-align: middle; display: inline-block;">
+                        <a href="https://twitter.com/Ketchcast" target="_blank">
+                            <img style="width: 5vw; height: auto;" src="img/twitter-black.svg" alt="twitter">
+                        </a>
+                    </span>
+                    <span class="connect__connect-links__links__linkedIn"
+                        style="vertical-align: middle; display: inline-block;">
+                        <a href="https://www.linkedin.com/in/john-ketchum-69156155/" target="_blank">
+                            <img style="width: 5vw; height: auto;" src="img/linkedin.svg" alt="linkedin">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--end of ready to connect-->
+        <!--start of twitter feed-->
+        <section>
+            <div class="container" style="margin-top: 10%;">
+                <div class="row" style="background-color: black;">
+                    <div class="col-sm-12">
+                        <div class="elements--title text-center" style="background-color: black;">
+                            <h2
+                                style="font-family: 'Bebas Neue', cursive; font-size: 10vw; font-weight: 400;color: white;">
+                                Follow Me On</h2>
+                        </div>
+                        <div class="follow-me__content__title-content__img"
+                            style="max-width: 10vw; margin-left: 45%; margin-top: -10%; display: flex; justify-content: center;">
+                            <img src="img/twitter-white.svg" alt="twitter">
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <a class="twitter-timeline" data-lang="en" data-height="700" data-width="500"
+                                data-theme="dark" href="https://twitter.com/Ketchcast?ref_src=twsrc%5Etfw">Tweets by
+                                Ketchcast</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <!--end of twitter feed-->
+        <footer class="bg--dark footer-4">
+            <div class="footer__lower">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 text-center-lg">
+                            <span class="type--fine-print">&copy; Designed & Developed by Candace Rogue LLC</span>
+                        </div>
+                        <div class="col-sm-6 text-right text-center-xs">
+                            <a href="#top" class="inner-link top-link">
+                                <i class="interface-up-open-big"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/ytplayer.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/twitterfetcher.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
